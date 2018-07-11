@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+}
+
+.container {
+	margin: 50px 150px;
+
+	@media screen and (max-width: $screen_medium) {
+		margin: 48px 48px;
+	}
+}
+
+img {
+	max-width: 100%;
+	border-radius: 3px;
+}
