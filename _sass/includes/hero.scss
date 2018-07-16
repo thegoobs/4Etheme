@@ -1,0 +1,35 @@
+header {
+	background: linear-gradient(rgba(42,42,42,.7),rgba(42,42,42,.7)), url("");
+	// background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+
+	@media screen and (min-width: $screen_medium) {
+		padding: 128px;
+	}
+
+	@media screen and (max-width: $screen_medium) {
+		padding: 48px;
+	}
+}
+
+header h1, header h2 {
+	margin: 0;
+}
+
+#contact_button {
+	padding: 12px;
+	display: inline-block;
+	margin: auto;
+	margin-top: 48px;
+	
+	background: rgba(0,0,0,0);
+	border: 2px solid $color_2;
+	color: white;
+	text-decoration: none;
+	transition: background 0.2s ease-out;
+
+	&:hover {
+		background: $color_2;
+	}
+}

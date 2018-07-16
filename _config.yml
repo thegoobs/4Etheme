@@ -1,48 +1,51 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-Email: your-email@example.com
-Address: |-
+---
+title: 4E Construction Services
+timezone: America/Chicago
+collections:
+  employees:
+    title: Employees
+    output: false
+  posts:
+    title: Posts
+    output: false
+  projects:
+    title: Projects
+    output: false
+  services:
+    title: Services
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+subtitle: Quality Construction
+call_to_action: Let's Build Something Together
+hero_image: "assets/austin.jpeg"
+description: |-
+  4E Construction Services, LLC offers a full range of construction services providing General Contracting, construction management, and design-build services to a broad spectrum of Clients in both public and private sectors throughout Central Texas. Our emphasis is General Contracting in site work and subdivision development. Our services include excavation, paving, concrete structures, storm drainage, water, wastewater, electrical, and telecommunications improvements. \
+  \
+  We conduct our business in a manner that has earned us the respect and goodwill of Clients, subcontractors, and inspectors. We maintain our excellent industry reputation by doing competent work, completing projects on time, and dealing fairly and honestly with all parties involved in a Project. \
+  \
+  We value providing superior quality at a competitive price while maintaining a safe and supportive environment for our Employees. Our team consists of highly qualified specialists in the fields of estimating, project management, excavation, and utility construction, who are committed to delivering projects that meet or exceed regulatory Codes and specifications - on time and on budget. \
+  \
+  Our Firm has completed various private and public sector Projects, including commercial site development, subdivision infrastructure, water and wastewater systems, utility replacements and upgrades, and marina construction.
+email: 4eservices@4econstructionservices.com
+phone: |-
+  Tel.: 512-312-5040
+  Fax: 512-312-5399
+address: |-
   3601 Kyle Crossing, Suite A
   Kyle, Texas 78640
-Phone: (512) 312-5040
-Description: >- # this means to ignore newlines until "baseurl:"
-  Cuatro Consultants, Ltd. is a civil engineering/consulting Firm offering a full range of design, permitting, and land development services throughout the Austin metropolitan and Central Texas area.  We serve a diverse Clientele ranging from individuals and small local companies to large national corporations.  We assist our Clients through all phases of their Projects, starting with concept development and ending with construction completion.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
-# Build settings
+permalink: pretty
 markdown: kramdown
-logo: assets/images/logo.png
-hero:
-  - assets/images/hero/hero1.png
-  - assets/images/hero/hero2.png
-  - assets/images/hero/hero3.png
-  - assets/images/hero/hero4.png
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/

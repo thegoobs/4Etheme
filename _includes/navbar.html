@@ -1,4 +1,7 @@
 <nav role="navigation">
+	<div class="navbar-burger">
+		<hr/><hr/><hr/>
+	</div>
 	<ul>
 		{%- for page in site.pages -%}
 			{% if page.title %}
@@ -10,8 +13,4 @@
 			{% endif %}
 		{%- endfor -%}
 	</ul>
-
-	<div class="navbar-burger">
-		<hr/><hr/><hr/>
-	</div>
 </nav>

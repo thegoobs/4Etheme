@@ -5,14 +5,20 @@ nav {
 nav ul {
 	margin: 0;
 	padding: 0 0 12px 0;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	text-align: center;
 	border-bottom: 0.5px solid $color_font_body;
+	overflow: auto;
+
+	@media screen and (min-width: $screen_medium) {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
 }
 
 nav ul li {
 	list-style-type: none;
+	clear: both;
 }
 
 nav ul li a {
@@ -21,13 +27,31 @@ nav ul li a {
 	font-family: $font_title;
 	font-size: 13px;
 	text-transform: uppercase;
+	transition: all 0.1s ease-out;
 }
 
 .navbar-burger {
+	display: none;
+	right: 12px;
+	position: absolute;
 	width: 25px;
 	padding: 8px;
 
 	& hr {
 		margin: 5px 0;
+	}
+}
+
+
+
+@media screen and (max-width: $screen_medium) {
+	nav ul {
+		height: 0;
+		display: none;
+	}
+
+	.navbar-burger {
+		display: block;
+		cursor: pointer;
 	}
 }
