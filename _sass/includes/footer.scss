@@ -1,0 +1,33 @@
+footer {
+	padding: 8 36px;
+	margin: 0;
+	background-color: #333;
+	color: $color_font_body;
+	text-align: center;
+	font-size: 0.85em;
+
+	& p {
+		margin: 0;
+		padding: 8px;
+	}
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	& p {
+		margin: 24px;
+		max-width: 50%;
+		white-space: pre;
+	}
+
+	@media screen and (max-width: $screen_small) {
+		display: block;
+
+		& p {
+			max-width: 100%;
+		}
+	}
+}
